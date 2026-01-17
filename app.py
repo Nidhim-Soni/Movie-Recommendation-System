@@ -22,7 +22,7 @@ st.set_page_config(
 # -----------------------------
 @st.cache_data
 def load_data():
-    df = pd.read_csv("D:\Movie recommendation\movies (1).csv")
+    df = pd.read_csv(r'movies (1).csv')
 
     # Remove movies with no genres listed (you already did it in notebook, still safe here)
     df = df[df["genres"] != "(no genres listed)"].copy()
